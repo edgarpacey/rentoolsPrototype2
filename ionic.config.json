@@ -1,0 +1,8 @@
+{
+  "name": "rentoolsprotype",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fceea2b1"
+}

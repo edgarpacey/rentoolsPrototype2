@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
+})
+export class AppComponent {
+  public appPages = [
+    { title: 'Home', url: '/folder/Rentools' },
+    { title: 'Add Listing', url: '/folder/Add Listing' },
+    { title: 'Bookmarks', url: '/folder/Bookmarks' },
+    { title: 'Settings', url: '/folder/Settings' },
+    { title: 'About Us', url: '/folder/About Us'},
+    { title: 'Log Out', url: '/folder/Log Out'  },
+  ];
+  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  constructor() {}
+}
