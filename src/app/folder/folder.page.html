@@ -3,17 +3,35 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title> {{folder}} </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-searchbar animated></ion-searchbar>
-  <ion-button id='map' size='large' expand="block">Explore Tools in Your Area</ion-button>
-  
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-searchbar animated></ion-searchbar>
+<ion-button id="map" size="large" expand="block"
+  >Explore Tools in Your Area</ion-button
+>
+
+<section>
+  <header>Explore by Catagory</header>
+  <ion-button size="small">Default</ion-button>
+  <ion-button size="small" color="secondary">Secondary</ion-button>
+</section>
+
+<section>
+  <ion-button size="small">Default</ion-button>
+  <ion-button size="small" color="secondary">Secondary</ion-button>
+</section>
+
+<section>
+  <ion-button size="small">Default</ion-button>
+  <ion-button size="small" color="secondary">Secondary</ion-button>
+</section>
 </ion-content>
+
