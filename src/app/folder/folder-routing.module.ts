@@ -7,8 +7,13 @@ const routes: Routes = [
   {
     path: '',
     component: FolderPage
+  },
+  {
+    path: 'PickTools/:id',
+    loadChildren: () => import('../PickTools/PickTools.module').then( m => m.PickToolsPageModule)
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
