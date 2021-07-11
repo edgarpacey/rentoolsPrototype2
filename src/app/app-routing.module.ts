@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'PickTools/:id',
     loadChildren: () => import('./PickTools/PickTools.module').then( m => m.PickToolsPageModule)
+  },
+  {
+    path: 'PickRenter/:id',
+    loadChildren: () => import('./PickRenter/PickRenter.module').then( m => m.PickRenterPageModule)
   }
 ];
 
