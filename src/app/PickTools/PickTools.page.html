@@ -4,10 +4,29 @@
     <ion-menu-button></ion-menu-button>
   </ion-buttons>
   <ion-back-button slot="start"></ion-back-button>
-  <ion-title>Rentools</ion-title>
+  <ion-title>Tools</ion-title>
 </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <ion-button size="default" [routerLink]="['/PickRenter/PickRenterPageModule']">Electric Drill</ion-button>
+<section>
+  <h6>Commonly Used Power Tools</h6>
+</section>
+<section>
+  <ion-button size="default">Filter Your Results</ion-button>
+</section>
+<ion-content> 
+  <section>
+  <ion-button class="tools" [routerLink]="['/PickRenter/PickRenterPageModule']">Electric Drill</ion-button>
+  </section>
+  <section>
+  <ion-button class="tools">Circular Saws</ion-button>
+  </section>
+  <section>
+  <ion-button class="tools">Angle Grinders</ion-button>
+  </section>
+  <section>
+  <ion-button class="tools">Saws</ion-button>
+  </section>
+  <section>
+  <ion-button class="tools">Nail Guns</ion-button>
+  </section>
 </ion-content>   

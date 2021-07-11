@@ -13,25 +13,27 @@
     <ion-title size="large">{{ folder }}</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-searchbar animated></ion-searchbar>
-<ion-button id="map" size="large" expand="block"
-  >Explore Tools in Your Area</ion-button
->
+<section>
+<ion-searchbar animated id="search"></ion-searchbar>
+</section>
+<section>
+<ion-button class="map">Explore Tools in Your Area</ion-button>
+</section>
 
 <section>
   <header>Explore by Catagory</header>
-  <ion-button size="small" [routerLink]="['/PickTools/PickToolsPageModule']">Default</ion-button>
-  <ion-button size="small" color="secondary">Secondary</ion-button>
+  <ion-button size="small" [routerLink]="['/PickTools/PickToolsPageModule']" class="selection">Power Drill</ion-button>
+  <ion-button class="selection" size="small" color="secondary">Accessories</ion-button>
 </section>
 
 <section>
-  <ion-button size="small">Default</ion-button>
-  <ion-button size="small" color="secondary">Secondary</ion-button>
+  <ion-button class="selection" size="small">Woodworking</ion-button>
+  <ion-button size="small" color="secondary" class="selection">Welding</ion-button>
 </section>
 
 <section>
-  <ion-button size="small">Default</ion-button>
-  <ion-button size="small" color="secondary">Secondary</ion-button>
+  <ion-button class="selection"size="small">Vaccums</ion-button>
+  <ion-button class="selection"size="small" color="secondary">Safety Gear</ion-button>
 </section>
 </ion-content>
 

@@ -9,7 +9,6 @@ export class AppComponent {
     { title: 'Home', url: '/folder/Rentools' },
     { title: 'Add Listing', url: '/PickTools/PickToolsPageModule' },
     { title: 'Bookmarks', url: '/folder/Bookmarks' },
-    { title: 'Settings', url: '/folder/Settings' },
     { title: 'About Us', url: '/folder/About Us'},
     { title: 'Log Out', url: '/folder/Log Out'  },
   ];
