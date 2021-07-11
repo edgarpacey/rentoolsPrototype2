@@ -18,6 +18,14 @@ const routes: Routes = [
   {
     path: 'PickRenter/:id',
     loadChildren: () => import('./PickRenter/PickRenter.module').then( m => m.PickRenterPageModule)
+  },
+  {
+    path: 'RenterProfile/:id',
+    loadChildren: () => import('./RenterProfile/RenterProfile.module').then( m => m.RenterProfilePageModule)
+  },
+  {
+    path: 'Renter/:id',
+    loadChildren: () => import('./Renter/Renter.module').then( m => m.RenterPageModule)
   }
 ];
 

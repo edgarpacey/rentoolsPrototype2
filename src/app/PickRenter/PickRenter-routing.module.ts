@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: PickRenterPage
+  },
+  {
+    path: 'RenterProfile/:id',
+    loadChildren: () => import('../RenterProfile/RenterProfile.module').then( m => m.RenterProfilePageModule)
   }
 ];
 
