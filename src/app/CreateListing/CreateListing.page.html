@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+<ion-toolbar>
+  <ion-buttons slot="end">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title> Create A Listing </ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section>
+  <ion-item>
+  <ion-label>Choose Catagory</ion-label>
+  <ion-select ok-text="Choose" cancel-text="Cancel">
+    <ion-select-option value="dos">DOS</ion-select-option>
+    <ion-select-option value="lunix">Linux</ion-select-option>
+    <ion-select-option value="mac7">Mac OS 7</ion-select-option>
+    <ion-select-option value="mac8">Mac OS 8</ion-select-option>
+    <ion-select-option value="win3.1">Windows 3.1</ion-select-option>
+    <ion-select-option value="win95">Windows 95</ion-select-option>
+    <ion-select-option value="win98">Windows 98</ion-select-option>
+  </ion-select>
+</ion-item>
+  </section>
+  <section>
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </section>
+  <section>
+    <h4> Pricing </h4>
+  <ion-item>
+  <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+  <ion-label>Hourly</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+  <ion-label>Single Day</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+  <ion-label>2-7 Days</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+  <ion-label>8+ Days</ion-label>
+  </ion-item>
+  </section>
+</ion-content>
+

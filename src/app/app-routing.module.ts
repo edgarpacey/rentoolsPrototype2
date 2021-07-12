@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'Renter/:id',
     loadChildren: () => import('./Renter/Renter.module').then( m => m.RenterPageModule)
+  },
+  {
+    path: 'CreateListing/:id',
+    loadChildren: () => import('./CreateListing/CreateListing.module').then( m => m.CreateListingPageModule)
   }
 ];
 
