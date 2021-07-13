@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LogInOutPage
+  },
+  {
+    path: 'home/:id',
+    loadChildren: () => import('../folder/folder.module').then( m => m.folderPageModule)
   }
 ];
 
