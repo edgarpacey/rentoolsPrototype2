@@ -30,6 +30,18 @@ const routes: Routes = [
   {
     path: 'CreateListing/:id',
     loadChildren: () => import('./CreateListing/CreateListing.module').then( m => m.CreateListingPageModule)
+  },
+  {
+    path: 'Bookmarks/:id',
+    loadChildren: () => import('./Bookmarks/Bookmarks.module').then( m => m.BookmarksPageModule)
+  },
+  {
+    path: 'AboutUs/:id',
+    loadChildren: () => import('./AboutUs/AboutUs.module').then( m => m.AboutUsPageModule)
+  },
+  {
+    path: 'LogInOut/:id',
+    loadChildren: () => import('./LogInOut/LogInOut.module').then( m => m.LogInOutPageModule)
   }
 ];
 

@@ -8,9 +8,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: 'home/Rentools' },
     { title: 'Add Listing', url: '/CreateListing/CreateListingPageModule' },
-    { title: 'Bookmarks', url: '/folder/Bookmarks' },
-    { title: 'About Us', url: '/folder/About Us'},
-    { title: 'Log Out', url: '/folder/Log Out'  },
+    { title: 'Bookmarks', url: '/Bookmarks/BookmarksPageModule' },
+    { title: 'About Us', url: '/AboutUs/AboutUsPageModule'},
+    { title: 'Log Out', url: '/LogInOut/LogInOutPageModule'  },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
