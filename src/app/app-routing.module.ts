@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'LogInOut/:id',
     loadChildren: () => import('./LogInOut/LogInOut.module').then( m => m.LogInOutPageModule)
+  },
+  {
+    path: 'GeoMap/:id',
+    loadChildren: () => import('./GeoMap/GeoMap.module').then( m => m.GeoMapPageModule)
   }
 ];
 
