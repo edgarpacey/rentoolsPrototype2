@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'CreateAccount/:id',
     loadChildren: () => import('./CreateAccount/CreateAccount.module').then( m => m.CreateAccountPageModule)
+  },
+  {
+    path: 'SignIn/:id',
+    loadChildren: () => import('./SignIn/SignIn.module').then( m => m.SignInPageModule)
   }
 ];
 
