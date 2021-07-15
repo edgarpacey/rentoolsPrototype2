@@ -48,8 +48,8 @@ const routes: Routes = [
     loadChildren: () => import('./GeoMap/GeoMap.module').then( m => m.GeoMapPageModule)
   },
   {
-    path: 'GeoMap/:id',
-    loadChildren: () => import('./GeoMap/GeoMap.module').then( m => m.GeoMapPageModule)
+    path: 'CreateAccount/:id',
+    loadChildren: () => import('./CreateAccount/CreateAccount.module').then( m => m.CreateAccountPageModule)
   }
 ];
 

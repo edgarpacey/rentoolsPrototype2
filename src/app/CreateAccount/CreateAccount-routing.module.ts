@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: CreateAccountPage
+  },
+  {
+    path: 'home/:id',
+    loadChildren: () => import('../folder/folder.module').then( m => m.folderPageModule)
   }
 ];
 
