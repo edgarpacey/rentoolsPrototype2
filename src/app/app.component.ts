@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Add Listing', url: '/CreateListing/CreateListingPageModule' },
     { title: 'Bookmarks', url: '/Bookmarks/BookmarksPageModule' },
     { title: 'About Us', url: '/AboutUs/AboutUsPageModule'},
+    { title: 'Inbox', url: '/Inbox/InboxPageModule'},
     { title: 'Log Out', url: '/LogInOut/LogInOutPageModule'  },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'SignIn/:id',
     loadChildren: () => import('./SignIn/SignIn.module').then( m => m.SignInPageModule)
+  },
+  {
+    path: 'Inbox/:id',
+    loadChildren: () => import('./Inbox/Inbox.module').then( m => m.InboxPageModule)
   }
 ];
 
