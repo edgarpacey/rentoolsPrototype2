@@ -1,12 +1,43 @@
 <ion-header [translucent]="true">
 <ion-toolbar>
-  <ion-buttons slot="end">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-  <ion-title> Success! </ion-title>
+  <ion-back-button slot="start"></ion-back-button>
+  <ion-title> Create An Account </ion-title>
 </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button [routerLink]="['/home/Gotools']"></ion-button>
+  <section>
+    <ion-button class="Choose">Rentee</ion-button><ion-button  class="Choose" size="default">Rentor</ion-button>
+  </section>
+  <section>
+  <ion-item>
+    <ion-label position="floating">First Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Last Name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Confirm Password</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Phone Number</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Address</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-button [routerLink]="['/home/Gotools']">Create Account</ion-button>
+  </section>
 </ion-content>

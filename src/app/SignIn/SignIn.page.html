@@ -1,11 +1,19 @@
 <ion-header [translucent]="true">
 <ion-toolbar>
-  <ion-buttons slot="end">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-  <ion-title> Success! </ion-title>
+  <ion-title> Sign In </ion-title>
 </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button [routerLink]="['/home/Gotools']"></ion-button>
+  <section>
+    <ion-item>
+      <ion-label position="floating">Email Address</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </section>
+  <ion-button [routerLink]="['/home/Gotools']">Log In</ion-button>
+  <ion-button [routerLink]="['']">Go Back</ion-button>
