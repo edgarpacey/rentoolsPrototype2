@@ -3,6 +3,35 @@
   <ion-buttons slot="end">
     <ion-menu-button></ion-menu-button>
   </ion-buttons>
-  <ion-title> Success! </ion-title>
+  <ion-title>Account</ion-title>
 </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <section class="center">
+    <ion-item>
+      <ion-icon size="large" name="person-circle-outline"></ion-icon>
+    </ion-item>
+  </section>
+  <section class="center">
+    <h1> Edgar </h1>
+  </section>
+  <section class="center">
+    <p>Email: A1SINCEDAY1@gmail.com</p>
+    <p>Phone Number: (123) 456-7890</p>
+  </section>
+  <section>
+    <p>My Location: London SW1A 1AA, United Kingdom</p>
+    <ion-item>
+      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-label>Share My Location on GeoMap</ion-label>
+    </ion-item>
+  </section>
+  <section>
+    <p>My Listed Tools</p>
+    <ion-button class="tools" [routerLink]="   ['/RenterProfile/RenterProfilePageModule']">
+      <ion-icon       size='large'name="person-circle-outline"></ion-icon>
+      John Jones - Elecric Drill
+    </ion-button>
+  </section>
+  </ion-content>
