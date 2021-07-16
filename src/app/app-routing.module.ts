@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'Inbox/:id',
     loadChildren: () => import('./Inbox/Inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'Account/:id',
+    loadChildren: () => import('./Account/Account.module').then( m => m.AccountPageModule)
   }
 ];
 

@@ -2,7 +2,7 @@
   <ion-split-pane contentId="main-content">
     <ion-menu side='end' contentId="main-content" type="overlay">
       <ion-content>
-        <button id="account">
+        <button id="account" [routerLink]="['/Account/AccountPageModule']">
           <ion-icon color="dark"size='large'name="person-circle-outline" ></ion-icon></button>
         <ion-list id="inbox-list">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
