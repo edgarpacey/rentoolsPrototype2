@@ -7,10 +7,6 @@
   <ion-title> GeoMap </ion-title>
 </ion-toolbar>
 </ion-header>
-<ion-content>
-  <section>
-<ion-button>Filter Your Results</ion-button></section>
-<section>
-  <ion-button>Search</ion-button>
-</section>
+<ion-content [fullscreen]="true">
+  <div #map id="map"></div>
 </ion-content>
