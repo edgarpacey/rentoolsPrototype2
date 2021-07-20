@@ -20,7 +20,7 @@ export class GeoMapPage {
     }
     ShowMap() {
       const location = new google.maps.LatLng(
-        37.334472, -121.885078
+        37.338003, -121.884761
       );
       const options = {
         center: location,
