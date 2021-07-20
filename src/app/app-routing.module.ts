@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'Account/:id',
     loadChildren: () => import('./Account/Account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'NearByListings/:id',
+    loadChildren: () => import('./NearByListings/NearByListings.module').then( m => m.NearByListingsPageModule)
   }
 ];
 
