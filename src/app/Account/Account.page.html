@@ -1,6 +1,7 @@
 <ion-header [translucent]="true">
 <ion-toolbar>
   <ion-buttons slot="end">
+  <ion-button (click)="openModal()"><ion-icon name="notifications-outline"></ion-icon></ion-button>
     <ion-menu-button></ion-menu-button>
   </ion-buttons>
   <ion-title>Account</ion-title>
@@ -10,7 +11,7 @@
 <ion-content>
   <section class="center">
     <ion-item>
-      <ion-icon size="large" name="person-circle-outline"></ion-icon>
+      <ion-icon id="person" size="large" name="person-circle-outline"></ion-icon>
     </ion-item>
   </section>
   <section class="center">

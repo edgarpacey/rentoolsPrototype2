@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { InboxPage } from '../Inbox/Inbox.page';
 
 @Component({
   selector: 'app-Account',
   templateUrl: './Account.page.html',
-  styleUrls: ['./Account.page.scss'],
+  styleUrls: ['./Account.page.scss']
 })
-export class AccountPage implements OnInit {
-  public Account: string;
+export class AccountPage {
+  constructor(private modalCtrl: ModalController) {}
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  async openModal() {
+    const modal = await this.modalCtrl.create({
+      conponent: InboxPage
+    });
 
-  ngOnInit() {
-    this.Account = this.activatedRoute.snapshot.paramMap.get('id');
+    await modal.present();
   }
-
 }
