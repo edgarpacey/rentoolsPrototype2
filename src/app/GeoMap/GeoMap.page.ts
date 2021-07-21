@@ -57,5 +57,7 @@ export class GeoMapPage {
         cssClass: 'my-custom-class'
       });
       return await modal.present();
-    }
+    };
+
+    
 }
