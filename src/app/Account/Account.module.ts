@@ -16,6 +16,6 @@ import { InboxPage } from '../Inbox/Inbox.page';
     IonicModule,
     AccountPageRoutingModule
   ],
-  declarations: [AccountPage, InboxPage]
+  declarations: [AccountPage]
 })
 export class AccountPageModule {}
