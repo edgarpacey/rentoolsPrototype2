@@ -13,6 +13,8 @@ export class NearByListingsPage implements OnInit {
 
   ngOnInit() {
     this.NearByListings = this.activatedRoute.snapshot.paramMap.get('id');
-  }
+  };
+
+  
 
 }

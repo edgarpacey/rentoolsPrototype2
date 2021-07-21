@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { ViewChild, ElementRef } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { NearByListingsPage } from '../NearByListings/NearByListings.page';
 
 declare var google: any;
 
@@ -13,7 +14,7 @@ export class GeoMapPage {
 
   map: any;
   @ViewChild('map', { read: ElementRef, static: false }) mapRef: ElementRef;
-      constructor() {}
+      constructor(public modalController: ModalController) {}
     // ionic lifestyle method each time page opens the code will run and create a new map
     ionViewDidEnter() {
       this.ShowMap();
@@ -47,6 +48,14 @@ export class GeoMapPage {
           position: { lat: marks[0], lng: marks[1] },
           map: this.map,
         });
-      }
+      };
+      
+    };
+    async presentModal() {
+      const modal = await this.modalController.create({
+        component: NearByListingsPage,
+        cssClass: 'my-custom-class'
+      });
+      return await modal.present();
     }
 }
