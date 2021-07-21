@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { AccountPageRoutingModule } from './Account-routing.module';
 
 import { AccountPage } from './Account.page';
-import { InboxPage } from '../Inbox/Inbox.page';
 
 @NgModule({
   imports: [
