@@ -29,9 +29,24 @@ export class GeoMapPage {
       };
       this.map = new google.maps.Map(this.mapRef.nativeElement, options);
       const coorArray: [number, number][] = [
-        [34.415980, -119.866006],
-        [34.413931, -119.867358],
+        [37.338003, -121.884761],
       ];
-      
+
+      var circle = new google.maps.Circle({
+          map: this.map,
+          radius: 500, // this is in meters
+          fillColor: '#AA0000',
+          center: location,
+          strokeWeight: 0,
+        });
+
+      for (let i = 0; i < coorArray.length; i++) {
+        const marks = coorArray[i];
+        // Here we create the marker object
+        new google.maps.Marker({
+          position: { lat: marks[0], lng: marks[1] },
+          map: this.map,
+        });
+      }
     }
 }
