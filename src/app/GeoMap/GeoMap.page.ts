@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { NearByListingsPage } from '../NearByListings/NearByListings.page';
+import { GeoMapFilterPage } from '../GeoMapFilter/GeoMapFilter.page';
 
 declare var google: any;
 
@@ -54,6 +55,14 @@ export class GeoMapPage {
     async presentModal() {
       const modal = await this.modalController.create({
         component: NearByListingsPage,
+        cssClass: 'my-custom-class'
+      });
+      return await modal.present();
+    };
+
+    async presentfilterModal() {
+      const modal = await this.modalController.create({
+        component: GeoMapFilterPage,
         cssClass: 'my-custom-class'
       });
       return await modal.present();

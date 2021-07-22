@@ -66,6 +66,10 @@ const routes: Routes = [
   {
     path: 'NearByListings/:id',
     loadChildren: () => import('./NearByListings/NearByListings.module').then( m => m.NearByListingsPageModule)
+  },
+  {
+    path: 'GeoMapFilter/:id',
+    loadChildren: () => import('./GeoMapFilter/GeoMapFilter.module').then( m => m.GeoMapFilterPageModule)
   }
 ];
 
