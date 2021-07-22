@@ -1,18 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { MessageRenterPage } from '../MessageRenter/MessageRenter.page';
+
 
 @Component({
   selector: 'app-PickRenter',
   templateUrl: './PickRenter.page.html',
   styleUrls: ['./PickRenter.page.scss'],
 })
-export class PickRenterPage implements OnInit {
-  public PickRenter: string;
+export class PickRenterPage{
+;
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private modalController: ModalController) {
 
-  ngOnInit() {
-    this.PickRenter = this.activatedRoute.snapshot.paramMap.get('id');
   }
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: MessageRenterPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  };
+
 
 }

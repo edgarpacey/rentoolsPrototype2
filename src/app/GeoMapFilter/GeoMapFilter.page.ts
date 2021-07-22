@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Platfrom } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -8,13 +8,16 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./GeoMapFilter.page.scss'],
 })
 export class GeoMapFilterPage {
-
-  constructor(private modalController: ModalController) { }
+  rangeVal:string;
+  constructor(private modalController: ModalController) { 
+  }
 
   async dismiss() {
     this.modalController.dismiss({
       'dismissed': true
     });
   };
+
+  t
 
 }

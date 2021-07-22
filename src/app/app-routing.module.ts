@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'GeoMapFilter/:id',
     loadChildren: () => import('./GeoMapFilter/GeoMapFilter.module').then( m => m.GeoMapFilterPageModule)
+  },
+  {
+    path: 'MessageRenter/:id',
+    loadChildren: () => import('./MessageRenter/MessageRenter.module').then( m => m.MessageRenterPageModule)
   }
 ];
 
