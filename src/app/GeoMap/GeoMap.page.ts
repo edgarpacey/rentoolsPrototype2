@@ -26,7 +26,7 @@ export class GeoMapPage {
       );
       const options = {
         center: location,
-        zoom: 15,
+        zoom: 13,
         disableDefaultUI: true,
       };
       this.map = new google.maps.Map(this.mapRef.nativeElement, options);
@@ -36,7 +36,7 @@ export class GeoMapPage {
 
       var circle = new google.maps.Circle({
           map: this.map,
-          radius: 500, // this is in meters
+          radius: 1609.344, // this is in meters
           fillColor: '#AA0000',
           center: location,
           strokeWeight: 0,
