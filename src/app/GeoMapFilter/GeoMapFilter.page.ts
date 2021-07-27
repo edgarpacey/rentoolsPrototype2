@@ -1,40 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-GeoMapFilter',
   templateUrl: './GeoMapFilter.page.html',
-  styleUrls: ['./GeoMapFilter.page.scss'],
+  styleUrls: ['./GeoMapFilter.page.scss']
 })
 export class GeoMapFilterPage {
-  rangeVal:string;
-  currentRange:string;
+  rangeVal: string;
+  currentRange: string;
 
+  circleRange;
+  constructor(
+    private modalController: ModalController,
+    private router: Router
+  ) {}
+  newRange: any;
 
-  constructor(private modalController: ModalController) { 
-  }
-  newRange:any;
-
-  
   async dismiss() {
     this.modalController.dismiss({
-      'dismissed': true
+      dismissed: true
     });
-  };
+  }
 
   async filter() {
     const newRange = bruh.value * 1609.344;
+    this.circleRange = newRange;
     this.modalController.dismiss({
-      'dismissed': true
+      dismissed: true
     });
-    console.log(newRange)
+    let navigationExtras: NavigationExtras = {
+      state: {
+        circleRange: this.circleRange
+      }
+    };
+    this.router.navigate([`GeoMap/${this.circleRange}`], navigationExtras);
+    console.log(this.circleRange);
   }
-
-
-
-
-  
-
-  
-
 }

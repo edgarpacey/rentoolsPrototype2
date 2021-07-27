@@ -5,17 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { GeoMapPageRoutingModule } from './GeoMap-routing.module';
+
 import { GeoMapPage } from './GeoMap.page';
-
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GeoMapPageRoutingModule,
-    GeoMapFilterPageRoutingModule
+    GeoMapPageRoutingModule
   ],
   declarations: [GeoMapPage]
 })
