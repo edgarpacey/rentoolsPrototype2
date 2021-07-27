@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Platfrom } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -9,14 +8,32 @@ import { ModalController } from '@ionic/angular';
 })
 export class GeoMapFilterPage {
   rangeVal:string;
+  currentRange:string;
+
+
   constructor(private modalController: ModalController) { 
   }
+  newRange:any;
 
+  
   async dismiss() {
     this.modalController.dismiss({
       'dismissed': true
     });
   };
+
+  async filter() {
+    const newRange = bruh.value * 1609.344;
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+    console.log(newRange)
+  }
+
+
+
+
+  
 
   
 
