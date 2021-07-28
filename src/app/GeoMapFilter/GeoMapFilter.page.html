@@ -8,14 +8,46 @@
 </ion-header>
 
 <ion-content>
-<p>Select a Mile Range (20 Max): {{ circleRange }}</p>
-<ion-item>
+  <p>Select a Mile Range (20 Max): {{ circleRange }}</p>
+  <ion-item>
 <ion-range id="bruh" value=() min="1" max="20" pin color="dark">
 </ion-range>
 </ion-item>
+<ion-content class="ion-padding">
+<div id="faq">
+  <ul>
+    <li>
+      <input type="checkbox" checked>
+      <i></i>
+      <h2> Tool Catagory</h2>
+      <ion-checkbox id="bruh"></ion-checkbox>
+    </li>
+  </ul>
+</div>
+<div id="faq">
+<ul>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2> Avaliblity</h2>
+    <ion-checkbox id="bruh"></ion-checkbox>
+  </li>
+</ul>
+</div>
+<div id="faq">
+<ul>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2> Brands</h2>
+    <ion-checkbox id="bruh"></ion-checkbox>
+  </li>
+</ul>
+</div>
 <section>
-<ion-button (click)="filter()" class="tools">
+<ion-button (click)="filter()" class="tools" expand="block">
   Filter
 </ion-button>
 </section>
+</ion-content>
 </ion-content>
