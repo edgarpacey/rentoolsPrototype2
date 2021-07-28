@@ -25,7 +25,7 @@ export class GeoMapFilterPage {
   }
 
   async filter() {
-    const newRange = bruh.value * 1609.344;
+    const newRange = qacheer.value * 1609.344;
     this.circleRange = newRange;
     this.modalController.dismiss({
       dismissed: true
