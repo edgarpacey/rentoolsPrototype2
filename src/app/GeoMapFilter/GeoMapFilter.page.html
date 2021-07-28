@@ -7,20 +7,30 @@
 </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <p>Select a Mile Range (20 Max): {{ circleRange }}</p>
-  <ion-item>
+<ion-content class="ion-padding">
+<p>Select a Mile Range (20 Max): {{ circleRange }}</p>
+<ion-item>
 <ion-range id="qacheer" value=() min="1" max="20" pin color="dark">
 </ion-range>
 </ion-item>
-<ion-content class="ion-padding">
 <div id="faq">
   <ul>
     <li>
       <input type="checkbox" checked>
       <i></i>
       <h2> Tool Catagory</h2>
-      <ion-checkbox id="bruh"></ion-checkbox>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">PowerTools</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Accessories</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Woodworking</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Welding & Soldering</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Saftey Gear</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Vaccums</ion-label><br>
     </li>
   </ul>
 </div>
@@ -30,7 +40,20 @@
     <input type="checkbox" checked>
     <i></i>
     <h2> Avaliblity</h2>
-    <ion-checkbox id="bruh"></ion-checkbox>
+    <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Monday</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Tuedsay</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Wednesday</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Thursday</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Friday</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Saturday</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Sunday</ion-label><br>
   </li>
 </ul>
 </div>
@@ -40,11 +63,21 @@
     <input type="checkbox" checked>
     <i></i>
     <h2> Brands</h2>
-    <ion-checkbox id="bruh"></ion-checkbox>
+    <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">DeWalt</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Milwaukee</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Makita</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Craftsmen</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Ridgid</ion-label><br>
+      <ion-checkbox class="bruh"></ion-checkbox>
+      <ion-label class="bruh">Skil</ion-label><br>
   </li>
 </ul>
 </div>
-</ion-content>
 <section>
 <ion-button (click)="filter()" class="tools" expand="block">
   Filter
