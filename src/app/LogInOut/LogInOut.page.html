@@ -1,17 +1,18 @@
-<ion-header [translucent]="true">
-<ion-toolbar>
-  <ion-buttons slot="end"></ion-buttons>
-  <ion-title> GoTools </ion-title>
-</ion-toolbar>
-</ion-header>
-<ion-content>
+
+
+<ion-content id="test">
+  <br>
+  <br>
+  <br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <section>
-  <ion-button expand="block" [routerLink]="['/CreateAccount/CreateAccountPageModule']">Sign Up</ion-button>
+    <br>
+  <ion-button id="sign" [routerLink]="['/CreateAccount/CreateAccountPageModule']">Sign Up</ion-button>
   </section>
+  <br>
   <section>
-  <ion-button expand="block" [routerLink]="['/SignIn/SignInPageModule']">Log In</ion-button>
+  <ion-button id="log" [routerLink]="['/SignIn/SignInPageModule']">Log In</ion-button>
   </section>
-  <section>
-  <ion-button expand="block" id="test"[routerLink]="['/home/Gotools']"> Skip For Now </ion-button>
-  </section>
+  <br>
+  <p [routerLink]="['/home/Gotools']"><u> Skip For Now </u></p>
 </ion-content>
