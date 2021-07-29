@@ -83,7 +83,6 @@
       transition: 0.2s;
     }
     .bruh{
-      text-align: left;
       font-size: 14px;
       line-height: 1.45;
       position: relative;
@@ -100,4 +99,18 @@
       transition: 0.3s opacity, 0.6s max-height;
     }
   }
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.yeah{
+  --background: #F44C0E;
+}
+
+.ohyeah {
+  --background: white;
+  --color: black;
 }

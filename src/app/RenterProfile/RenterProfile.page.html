@@ -14,10 +14,10 @@
   <h3>Electric Drill</h3>
   <p>de walt electric drill with charger and battery<p>
   
-<ion-button size="large">
+<ion-button class="ohyeah" size="large">
   <ion-icon  size='large'name="person-circle-outline"></ion-icon>
-  <ion-button [routerLink]="['/Renter/RenterPageModule']"> John Jones</ion-button>
-<ion-button [routerLink]="['/Inbox/InboxPageModule']"><ion-icon name="mail-outline"></ion-icon></ion-button>
+  <ion-button class="ohyeah" [routerLink]="['/Renter/RenterPageModule']"> John Jones</ion-button>
+<ion-button class="ohyeah" [routerLink]="['/Inbox/InboxPageModule']"><ion-icon name="mail-outline"></ion-icon></ion-button>
 </ion-button>
 </section>
 <section>
@@ -27,9 +27,30 @@
         <input type="checkbox" checked>
         <i></i>
         <h2>Listing Prices</h2>
-        <p class="bruh">
-          Hourly: $3 <br> Single Day: $3 <br> 2-7 Days: $3 <br> 8+ Days: $3 <br> Delivery: $3 <br> 
-        </p>
+        <table class='bruh' style="width:50%">
+        <tr>
+          <td>Hourly</td>
+          <td id="nah">$3</td>
+        </tr>
+        <tr>
+          <td>Single Day</td>
+          <td id="nah">$10</td>
+
+        </tr>
+        <tr>
+          <td>2-7 Days</td>
+          <td id="nah">$15</td>
+        </tr>
+        <tr>
+        <td>8+ Days</td>
+        <td id="nah">$20</td>
+
+      </tr>
+      <tr>
+        <td>Delivery</td>
+        <td id="nah">$10</td>
+      </tr>
+      </table>
       </li>
     </ul>
   </div>
@@ -37,37 +58,37 @@
 <section>  
   <h3>Avaliblity</h3>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" slot="start"></ion-checkbox>
       <ion-label>Monday</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" checked slot="start"></ion-checkbox>
       <ion-label>Tuedsay</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" checked="true" slot="start"></ion-checkbox>
       <ion-label>Wednesday</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium" disabled="true" slot="start"></ion-checkbox>
       <ion-label>Thursday</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" checked="false" slot="start"></ion-checkbox>
       <ion-label>Friday</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" checked="false"  slot="start"></ion-checkbox>
       <ion-label>Saturday</ion-label>
     </ion-item>
     <ion-item>
-      <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+      <ion-checkbox color="medium"  disabled="true" checked="false" slot="start"></ion-checkbox>
       <ion-label>Sunday</ion-label>
     </ion-item>
 </section>
 <section>
 
 <section>
-  <ion-button (click)="showAlert()">Request For Delivery</ion-button>
-  <ion-button (click)="showAlert()">Request For Pick Up</ion-button>
+  <ion-button class="yeah" (click)="showAlert()">Request For Delivery</ion-button>
+  <ion-button class="yeah" (click)="showAlert()">Request For Pick Up</ion-button>
 </section>

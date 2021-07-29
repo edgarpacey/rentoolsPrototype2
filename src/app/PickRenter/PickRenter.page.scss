@@ -1,7 +1,12 @@
 .tools {
   width: 350;
   height: 100px;
+  --background: white;
+  --color: black;
 }
 section {
   text-align: center;
+}
+#fix {
+  --background: #F44C0E;
 }

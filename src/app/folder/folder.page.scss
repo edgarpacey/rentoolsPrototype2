@@ -30,6 +30,7 @@ ion-menu-button {
 .map {
   font-size: 16px;
   width: 300px;
+  --background: #F44C0E;
 }
 
 #search {
@@ -44,7 +45,7 @@ section {
   width: 140px;
   height: 115px;
   border: 5px;
-  --background: #FFCB69;
+  --background: #F44C0E;
 }
 ion-content{
   text-align: center;
