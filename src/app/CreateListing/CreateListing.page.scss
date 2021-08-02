@@ -2,6 +2,21 @@ ion-title {
   text-align: center;
 }
 
-.jessethecarriedguy {
+#jessethecarriedguy {
   --background: #f44c0e;
+  --box-shadow: 0px 2px 5px rgb(122, 120, 120);
+  width: 135px;
+  height: 35px;
+}
+
+#clear {
+  --background: white;
+  --color: black;
+  --box-shadow: 0px 2px 5px rgb(122, 120, 120);
+  width: 135px;
+  height: 35px;
+}
+
+section {
+  text-align: center;
 }
