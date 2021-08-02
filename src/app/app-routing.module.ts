@@ -74,6 +74,10 @@ const routes: Routes = [
   {
     path: 'MessageRenter/:id',
     loadChildren: () => import('./MessageRenter/MessageRenter.module').then( m => m.MessageRenterPageModule)
+  },
+  {
+    path: 'PremoteListing/:id',
+    loadChildren: () => import('./PremoteListing/PremoteListing.module').then( m => m.PremoteListingPageModule)
   }
 ];
 
