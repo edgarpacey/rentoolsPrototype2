@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
-import { ViewChild, ElementRef } from '@angular/core';
+import { AlertController, ModalController } from '@ionic/angular';
+import { MessageRenterPage } from '../MessageRenter/MessageRenter.page';
+
 
 declare var google: any;
 
@@ -11,42 +12,12 @@ declare var google: any;
 })
 export class RenterProfilePage {
 
-  map: any;
-  @ViewChild('map', { read: ElementRef, static: false }) mapRef: ElementRef;
   constructor(
-    private alertCtrl: AlertController
+    private alertCtrl: AlertController,
+    private modalController: ModalController
   ) {}
 
-  ionViewDidEnter() {
-    this.ShowMap();
-  }
-  ShowMap() {
-    const location = new google.maps.LatLng(37.338003, -121.884761);
-    const options = {
-      center: location,
-      zoom: 13,
-      disableDefaultUI: true
-    };
-    this.map = new google.maps.Map(this.mapRef.nativeElement, options);
-    const coorArray: [number, number][] = [[37.338003, -121.884761]];
 
-    var circle = new google.maps.Circle({
-      map: this.map,
-      radius: 3000, // this is in meters
-      fillColor: '#AA0000',
-      center: location,
-      strokeWeight: 0
-    });
-
-    for (let i = 0; i < coorArray.length; i++) {
-      const marks = coorArray[i];
-      // Here we create the marker object
-      new google.maps.Marker({
-        position: { lat: marks[0], lng: marks[1] },
-        map: this.map
-      });
-    }
-  }
 
   async showAlert(){
     await this.alertCtrl.create({
@@ -60,4 +31,14 @@ export class RenterProfilePage {
       ]
     }).then(res => res.present());
   }
+  
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: MessageRenterPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+  
+  
 }

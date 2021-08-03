@@ -11,18 +11,16 @@
 <section><img src="https://i.ebayimg.com/images/g/Ay4AAOSwge9gLsKG/s-l1600.jpg" width="400" height="300"></section>
 <section>
   <p>Power Tool</p>
-  <h3>Electric Drill</h3>
-  <p>de walt electric drill with charger and battery<p>
-    
+  <h2> <b>Electric Drill</b></h2>
+  <p>de walt electric drill with charger and battery<p> 
   </section>
   <section id="homay">
     <h3>Location</h3>
-    <div #map id="map">
-    </div>
-<ion-button class="ohyeah" size="large">
+    <img src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Location.jpg">
+<ion-button class="ohnah" size="large">
   <ion-icon  size='large'name="person-circle-outline"></ion-icon>
   <ion-button class="ohyeah" [routerLink]="['/Renter/RenterPageModule']"> John Jones</ion-button>
-<ion-button class="ohyeah" [routerLink]="['/Inbox/InboxPageModule']"><ion-icon name="mail-outline"></ion-icon></ion-button>
+<ion-button class="ohyeah" (click)="presentModal()"><ion-icon name="mail-outline"></ion-icon></ion-button>
 </ion-button>
 </section>
 <section>
@@ -61,7 +59,7 @@
 </section>
 <section>  
   <h3>Availability</h3>
-    <ion-item>
+    <!-- <ion-item>
       <ion-checkbox color="medium"  disabled="true" slot="start"></ion-checkbox>
       <ion-label>Monday</ion-label>
     </ion-item>
@@ -88,11 +86,12 @@
     <ion-item>
       <ion-checkbox color="medium"  disabled="true" checked="false" slot="start"></ion-checkbox>
       <ion-label>Sunday</ion-label>
-    </ion-item>
+    </ion-item> -->
+    <img id="calendar" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Calendar.png">
 </section>
 <section>
 
 <section id="homay">
-  <ion-button class="yeah" (click)="showAlert()">Request For Delivery</ion-button>
-  <ion-button class="yeah" (click)="showAlert()">Request For Pick Up</ion-button>
+  <ion-button class="yeah" (click)="showAlert()" [routerLink]="['/home/GoTools']">Request For Delivery</ion-button>
+  <ion-button class="yeah" (click)="showAlert()" [routerLink]="['/home/GoTools']">Request For Pick Up</ion-button>
 </section>
