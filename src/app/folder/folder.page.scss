@@ -1,5 +1,6 @@
 ion-menu-button {
   color: var(--ion-color-primary);
+  text-align: right;
 }
 
 #container {
@@ -49,4 +50,8 @@ section {
 }
 ion-content{
   text-align: center;
+}
+
+#pic {
+  margin-left: 15%;
 }
