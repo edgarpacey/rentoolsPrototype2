@@ -19,20 +19,47 @@
 </ion-card>
 </section>
 
-<section>
-  <header>Explore by Catagory</header>
-  <ion-button size="small" [routerLink]="['/PickTools/PickToolsPageModule']" class="selection">Power Tools</ion-button>
-  <ion-button class="selection" size="small">Accessories</ion-button>
-</section>
-
-<section>
-  <ion-button class="selection" size="small">Woodworking</ion-button>
-  <ion-button size="small"class="selection">Welding</ion-button>
-</section>
-
-<section>
-  <ion-button class="selection"size="small">Vaccums</ion-button>
-  <ion-button class="selection"size="small">Safety Gear</ion-button>
-</section>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <img id="picture" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>PowerTools</h6>
+      </ion-card-header>
+    </ion-card>
+    <ion-card id="selectCards">
+      <img id="picture"src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>Accessories</h6>
+      </ion-card-header>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <img id="picture" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>Woodworking</h6>
+     </ion-card-header>
+    </ion-card>
+    <ion-card id="selectCards">
+      <img id="picture"src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>Welding</h6>
+      </ion-card-header>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <img id="picture" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>Vaccums</h6>
+     </ion-card-header>
+    </ion-card>
+    <ion-card id="selectCards">
+      <img id="picture"src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/PowerToolsImg.png" width="140" height="115">
+      <ion-card-header>
+        <h6>Safety Gear</h6>
+      </ion-card-header>
+    </ion-card>
+  </div>
 </ion-content>
 
