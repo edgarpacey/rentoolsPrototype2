@@ -32,7 +32,6 @@ ion-menu-button {
   font-size: 16px;
   width: 300px;
   height: 75px;
-  --background: #F44C0E;
 }
 
 #search {
@@ -59,4 +58,27 @@ ion-content{
 
 ion-content {
   --background: url(https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Background%20Image.png) no-repeat center/cover fixed;
+}
+
+ion-button {
+  --background: #F44C0E;
+}
+
+#yes {
+  position:absolute; left:10px; top:0px;
+}
+
+#GeoMapButtonIcon {
+  position:absolute; left:300px; top:0px;
+}
+
+ion-card {
+  width: 345px;
+  height: 75px;
+  --background: #F44C0E;
+}
+
+h5 {
+  margin-top: 8%;
+  color: white;
 }
