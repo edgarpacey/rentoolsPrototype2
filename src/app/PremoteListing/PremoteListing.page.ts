@@ -16,3 +16,4 @@ export class PremoteListingPage implements OnInit {
   }
 
 }
+
