@@ -10,20 +10,30 @@
 <section>
   <h6>Commonly Used Power Tools</h6>
 </section>
-<ion-content> 
-  <section>
-  <ion-button class="tools" [routerLink]="['/PickRenter/PickRenterPageModule']">Electric Drill</ion-button>
-  </section>
-  <section>
-  <ion-button class="tools">Circular Saws</ion-button>
-  </section>
-  <section>
-  <ion-button class="tools">Angle Grinders</ion-button>
-  </section>
-  <section>
-  <ion-button class="tools">Saws</ion-button>
-  </section>
-  <section>
-  <ion-button class="tools">Nail Guns</ion-button>
-  </section>
-</ion-content>   
+<ion-content>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickRenter/PickRenterPageModule']">
+      <h3>Electric Drils</h3> <img id="drill" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Drill.png" width="110" height="110">
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <h3>Electric Drils</h3> <img id="saw" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Saw.png" width="110" height="110">
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <h3>Electric Drils</h3> <img id="angle" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Angel.png" width="135" height="175">
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <h3>Electric Drils</h3> <img id="saws" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Saws.png" width="130" height="140">
+    </ion-card>
+  </div>
+  <div>
+    <ion-card id="selectCards" [routerLink]="['/PickTools/PickToolsPageModule']">
+      <h3>Electric Drils</h3> <img id="nail" src="https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/NailGun.png" width="125" height="125">
+    </ion-card>
+  </div>
+</ion-content>

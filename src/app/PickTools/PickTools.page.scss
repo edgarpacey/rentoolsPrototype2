@@ -14,3 +14,42 @@ section {
 ion-content {
   --background: url(https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Background%20Image.png) no-repeat center/cover fixed;
 }
+
+#drill {
+  position:absolute; right:-20px; top:16px;
+}
+
+#saw {
+  position:absolute; right:-10px; top:0px;
+}
+
+#saws {
+  position:absolute; right:-20px; top:0px;
+}
+
+#angle {
+  position:absolute; right:-20px; top:-40px;
+}
+
+#nail {
+  position:absolute; right:-20px; top: 10px;
+}
+
+#selectCards {
+  width: 300px;
+  height: 100px;
+  --background: #F44C0E;
+  display: inline-block;
+  margin-top: -2%;
+  margin-left: 0%;
+}
+
+h3 {
+  margin-top: 12%;
+  margin-left: -30%;
+  color: white;
+}
+
+div {
+  text-align: center;
+}
