@@ -3,7 +3,7 @@ ion-menu ion-content {
 }
 
 ion-menu.md ion-content {
-  --padding-start: 8px;
+  --padding-start: 0px;
   --padding-end: 8px;
   --padding-top: 20px;
   --padding-bottom: 20px;
@@ -19,11 +19,11 @@ ion-menu.md ion-note {
 
 ion-menu.md ion-list-header,
 ion-menu.md ion-note {
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-color-step-150, white);
+  border-bottom: 5px solid var(--ion-color-step-150, black);
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
@@ -125,8 +125,10 @@ ion-item.selected {
 }
 
 #bruh {
-  --background: white;
+  --background: url(https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Background%20Image.png) no-repeat center/cover fixed;
   --color: #051FBE;
+  margin-left: -50px;
+  border-bottom: 1px solid var(--ion-color-step-150, black);
 }
 
 
