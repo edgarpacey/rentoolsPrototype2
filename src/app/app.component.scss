@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #5062D1));
+  --background: url(https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Background%20Image.png) no-repeat center/cover fixed;
 }
 
 ion-menu.md ion-content {
@@ -23,24 +23,24 @@ ion-menu.md ion-note {
 }
 
 ion-menu.md ion-list#inbox-list {
-  border-bottom: 1px solid var(--ion-color-step-150, #5062D1);
+  border-bottom: 1px solid var(--ion-color-step-150, white);
 }
 
 ion-menu.md ion-list#inbox-list ion-list-header {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 600;
 
   min-height: 20px;
 }
 
 ion-menu.md ion-list#labels-list ion-list-header {
-  font-size: 16px;
+  font-size: 40px;
 
   margin-bottom: 18px;
 
-  color: #5062D1;
+  color: white;
 
-  min-height: 26px;
+  min-height: 40px;
 }
 
 ion-menu.md ion-item {
@@ -50,15 +50,15 @@ ion-menu.md ion-item {
 }
 
 ion-menu.md ion-item.selected {
-  --background: #5062D1;
+  --background: white;
 }
 
 ion-menu.md ion-item.selected ion-icon {
-  color: #5062D1;
+  color: white;
 }
 
 ion-menu.md ion-item ion-icon {
-  color: #504ed6;
+  color: white;
 }
 
 ion-menu.md ion-item ion-label {
@@ -85,12 +85,12 @@ ion-menu.ios ion-item {
 }
 
 ion-menu.ios ion-item.selected ion-icon {
-  color: #5062D1;
+  color: white;
 }
 
 ion-menu.ios ion-item ion-icon {
-  font-size: 24px;
-  color: #5062D1;
+  font-size: 50px;
+  color: white;
 }
 
 ion-menu.ios ion-list#labels-list ion-list-header {
@@ -109,9 +109,9 @@ ion-menu.ios ion-note {
 
 ion-note {
   display: inline-block;
-  font-size: 20px;
+  font-size: 40px;
 
-  color: #5062D1;
+  color: white;
 }
 
 ion-item.selected {
@@ -119,14 +119,14 @@ ion-item.selected {
 }
 
 #account {
-  --background: #5062D1;
+  --background: white;
   margin-left: 70%;
   margin-top: 5%;
 }
 
 #bruh {
-  --background: #5062D1;
-  --color: white;
+  --background: white;
+  --color: #051FBE;
 }
 
 
