@@ -11,7 +11,7 @@ export class GeoMapFilterPage {
   rangeVal: string;
   currentRange: string;
   qacheer: any;
-  
+
 
   circleRange;
   constructor(
