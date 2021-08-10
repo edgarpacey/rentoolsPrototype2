@@ -10,6 +10,8 @@ import { Router, NavigationExtras } from '@angular/router';
 export class GeoMapFilterPage {
   rangeVal: string;
   currentRange: string;
+  qacheer: any;
+  
 
   circleRange;
   constructor(
