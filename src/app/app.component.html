@@ -3,7 +3,7 @@
     <ion-menu side='end' contentId="main-content" type="overlay">
       <ion-content>
         <ion-button id="account" [routerLink]="['/Account/AccountPageModule']">
-          <ion-icon color="dark"size='large'name="person-circle-outline" ></ion-icon></ion-button>
+          <ion-icon id="icon"color="dark"size='large'name="person-circle-outline" ></ion-icon></ion-button>
         <ion-list id="inbox-list">
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item id="bruh" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">

@@ -6,10 +6,25 @@
   --box-shadow: 0px 2px 5px rgb(122, 120, 120);
 }
 
+#tools {
+  width: 350;
+  height: 100px;
+  --background: #33cc99;
+  --color: black;
+  --box-shadow: 0px 2px 5px rgb(122, 120, 120);
+}
+
 .bools {
   width: 350;
   height: 100px;
   --background: white;
+  --color: black;
+}
+
+#bools {
+  width: 350;
+  height: 100px;
+  --background: #33cc99;
   --color: black;
 }
 

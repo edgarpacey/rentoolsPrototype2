@@ -124,11 +124,18 @@ ion-item.selected {
   margin-top: 5%;
 }
 
+#icon {
+  width: 50px;
+  height: 50px;
+  --backgrou: #051FBE;
+}
+
 #bruh {
   --background: url(https://stackblitz.com/files/rentools/github/edgarpacey/rentoolsPrototype2/master/src/assets/Background%20Image.png) no-repeat center/cover fixed;
   --color: #051FBE;
   margin-left: -50px;
   border-bottom: 1px solid var(--ion-color-step-150, black);
+  font-size: 20px;
 }
 
 
